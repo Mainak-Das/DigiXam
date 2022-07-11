@@ -1,0 +1,555 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+
+	
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<display-name>LoginController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegistrationController</servlet-name>
+  	<display-name>RegistrationController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.RegistrationController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OTPVerification</servlet-name>
+  	<display-name>OTPVerification</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.OTPVerification</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ForgotPasswordController</servlet-name>
+  	<display-name>ForgotPasswordController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.ForgotPasswordController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>NewPasswordController</servlet-name>
+  	<display-name>NewPasswordController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.NewPasswordController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegistrationController</servlet-name>
+  	<url-pattern>/RegistrationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OTPVerification</servlet-name>
+  	<url-pattern>/OTPVerification</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ForgotPasswordController</servlet-name>
+  	<url-pattern>/ForgotPasswordController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NewPasswordController</servlet-name>
+  	<url-pattern>/NewPasswordController</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Remove Extensions -->
+  <!--index.jsp -->
+  <servlet>
+  	<servlet-name>index</servlet-name>
+  	<jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>index</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <!--login.jsp -->
+  <servlet>
+  	<servlet-name>login</servlet-name>
+  	<jsp-file>/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>login</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!--home.jsp -->
+  <servlet>
+  	<servlet-name>home</servlet-name>
+  	<jsp-file>/home.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>home</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+<!--instruction.jsp -->
+  <servlet>
+  	<servlet-name>instruction</servlet-name>
+  	<jsp-file>/instruction.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>instruction</servlet-name>
+  	<url-pattern>/instruction</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  
+   <!--result.jsp -->
+  <servlet>
+  	<servlet-name>result</servlet-name>
+  	<jsp-file>/result.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>result</servlet-name>
+  	<url-pattern>/result</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  
+   <!--result.jsp -->
+  <servlet>
+  	<servlet-name>answers</servlet-name>
+  	<jsp-file>/answers.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>answers</servlet-name>
+  	<url-pattern>/answers</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+   <!--answer.jsp -->
+  <servlet>
+  	<servlet-name>answer</servlet-name>
+  	<jsp-file>/answer.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>answer</servlet-name>
+  	<url-pattern>/answer</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!--student-examination.jsp -->
+  <servlet>
+  	<servlet-name>student-examination</servlet-name>
+  	<jsp-file>/student-examination.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>student-examination</servlet-name>
+  	<url-pattern>/student-examination</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+   <!--result.jsp -->
+  <servlet>
+  	<servlet-name>admin</servlet-name>
+  	<jsp-file>/admin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>admin</servlet-name>
+  	<url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  
+  <!--forgotpassword.jsp -->
+  <servlet>
+  	<servlet-name>forgotpassword</servlet-name>
+  	<jsp-file>/forgotpassword.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>forgotpassword</servlet-name>
+  	<url-pattern>/forgotpassword</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+    <!--te.jsp -->
+  <servlet>
+  	<servlet-name>te</servlet-name>
+  	<jsp-file>/te.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>te</servlet-name>
+  	<url-pattern>/edit-profile</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!--otp.jsp -->
+  <servlet>
+  	<servlet-name>otp</servlet-name>
+  	<jsp-file>/otp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>otp</servlet-name>
+  	<url-pattern>/otp</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!-- examination.jsp -->
+   <servlet>
+  	<servlet-name>examination</servlet-name>
+  	<jsp-file>/examination.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>examination</servlet-name>
+  	<url-pattern>/examination</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!-- subject.jsp -->
+   <servlet>
+  	<servlet-name>subject</servlet-name>
+  	<jsp-file>/subject.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>subject</servlet-name>
+  	<url-pattern>/subject</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!-- subject.jsp -->
+   <servlet>
+  	<servlet-name>student</servlet-name>
+  	<jsp-file>/student.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>student</servlet-name>
+  	<url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!-- department.jsp -->
+   <servlet>
+  	<servlet-name>department</servlet-name>
+  	<jsp-file>/department.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>department</servlet-name>
+  	<url-pattern>/department</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+    <!-- qsn.jsp -->
+   <servlet>
+  	<servlet-name>qsn</servlet-name>
+  	<jsp-file>/qsn.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>qsn</servlet-name>
+  	<url-pattern>/question</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+    <!-- assign.jsp -->
+   <servlet>
+  	<servlet-name>assign</servlet-name>
+  	<jsp-file>/assign.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>assign</servlet-name>
+  	<url-pattern>/assign</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  
+    <!--screen1.jsp -->
+  <servlet>
+  	<servlet-name>screen_one</servlet-name>
+  	<jsp-file>/screen_one.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>screen_one</servlet-name>
+  	<url-pattern>/screen1</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  
+  <!--screen2.jsp -->
+  <servlet>
+  	<servlet-name>two</servlet-name>
+  	<jsp-file>/two.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>two</servlet-name>
+  	<url-pattern>/screen2</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+    
+    <!--screen3.jsp -->
+  <servlet>
+  	<servlet-name>three</servlet-name>
+  	<jsp-file>/three.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>three</servlet-name>
+  	<url-pattern>/screen3</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  
+  <!--newpassword.jsp -->
+  <servlet>
+  	<servlet-name>newpassword</servlet-name>
+  	<jsp-file>/newpassword.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditController</servlet-name>
+  	<display-name>EditController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.EditController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteController</servlet-name>
+  	<display-name>DeleteController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>newpassword</servlet-name>
+  	<url-pattern>/newpassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditController</servlet-name>
+  	<url-pattern>/EditController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteController</servlet-name>
+  	<url-pattern>/DeleteController</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!--error.jsp -->
+  <servlet>
+  	<servlet-name>error</servlet-name>
+  	<jsp-file>/error.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutController</servlet-name>
+  	<display-name>LogoutController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>error</servlet-name>
+  	<url-pattern>/error</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutController</servlet-name>
+  	<url-pattern>/LogoutController</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+  <!--user.jsp -->
+  <servlet>
+  	<servlet-name>user</servlet-name>
+  	<jsp-file>/user.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddUserController</servlet-name>
+  	<display-name>AddUserController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.AddUserController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DepartmentController</servlet-name>
+  	<display-name>DepartmentController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DepartmentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SubjectController</servlet-name>
+  	<display-name>SubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.SubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ExaminationController</servlet-name>
+  	<display-name>ExaminationController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.ExaminationController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteDepartmentController</servlet-name>
+  	<display-name>DeleteDepartmentController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DeleteDepartmentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditDepartmentController</servlet-name>
+  	<display-name>EditDepartmentController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.EditDepartmentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddSubjectController</servlet-name>
+  	<display-name>AddSubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.AddSubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditSubjectController</servlet-name>
+  	<display-name>EditSubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.EditSubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteSubjectController</servlet-name>
+  	<display-name>DeleteSubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DeleteSubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AssignedUserDepartmentSubjectController</servlet-name>
+  	<display-name>AssignedUserDepartmentSubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.AssignedUserDepartmentSubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditAUSDCSubjectController</servlet-name>
+  	<display-name>EditAUSDCSubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.EditAUSDCSubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteAUSDCSubjectController</servlet-name>
+  	<display-name>DeleteAUSDCSubjectController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DeleteAUSDCSubjectController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditExaminationController</servlet-name>
+  	<display-name>EditExaminationController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.EditExaminationController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteExaminationController</servlet-name>
+  	<display-name>DeleteExaminationController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DeleteExaminationController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReadFileController</servlet-name>
+  	<display-name>ReadFileController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.ReadFileController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.Logout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RemoveImageController</servlet-name>
+  	<display-name>RemoveImageController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.RemoveImageController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>StudentReadViewController</servlet-name>
+  	<display-name>StudentReadViewController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.StudentReadViewController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AnswerController</servlet-name>
+  	<display-name>AnswerController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.AnswerController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddMarksController</servlet-name>
+  	<display-name>AddMarksController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.AddMarksController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditMarksController</servlet-name>
+  	<display-name>EditMarksController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.EditMarksController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteMarksController</servlet-name>
+  	<display-name>DeleteMarksController</display-name>
+  	<description></description>
+  	<servlet-class>com.IMAP.controller.DeleteMarksController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>user</servlet-name>
+  	<url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddUserController</servlet-name>
+  	<url-pattern>/AddUserController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DepartmentController</servlet-name>
+  	<url-pattern>/DepartmentController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SubjectController</servlet-name>
+  	<url-pattern>/SubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ExaminationController</servlet-name>
+  	<url-pattern>/ExaminationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteDepartmentController</servlet-name>
+  	<url-pattern>/DeleteDepartmentController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditDepartmentController</servlet-name>
+  	<url-pattern>/EditDepartmentController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddSubjectController</servlet-name>
+  	<url-pattern>/AddSubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditSubjectController</servlet-name>
+  	<url-pattern>/EditSubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteSubjectController</servlet-name>
+  	<url-pattern>/DeleteSubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AssignedUserDepartmentSubjectController</servlet-name>
+  	<url-pattern>/AssignedUserDepartmentSubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditAUSDCSubjectController</servlet-name>
+  	<url-pattern>/EditAUSDCSubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteAUSDCSubjectController</servlet-name>
+  	<url-pattern>/DeleteAUSDCSubjectController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditExaminationController</servlet-name>
+  	<url-pattern>/EditExaminationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteExaminationController</servlet-name>
+  	<url-pattern>/DeleteExaminationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadFileController</servlet-name>
+  	<url-pattern>/ReadFileController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RemoveImageController</servlet-name>
+  	<url-pattern>/RemoveImageController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>StudentReadViewController</servlet-name>
+  	<url-pattern>/StudentReadViewController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AnswerController</servlet-name>
+  	<url-pattern>/AnswerController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddMarksController</servlet-name>
+  	<url-pattern>/AddMarksController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditMarksController</servlet-name>
+  	<url-pattern>/EditMarksController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteMarksController</servlet-name>
+  	<url-pattern>/DeleteMarksController</url-pattern>
+  </servlet-mapping>
+  <!-- End -->
+</web-app>
