@@ -7,19 +7,19 @@
 <!-- </div> -->
 <br /><br />
 
-🔴 ## **Desktop View**
+🔴 **Desktop View**
 
 ![Sihn Up](https://user-images.githubusercontent.com/93379681/208265141-63d10611-2334-40e8-8436-b90118ddaea3.png)<br /><br />
 
 
 
-🔴 ## **Tablet View**
+🔴 **Tablet View**
 
 ![Tablet mode](https://user-images.githubusercontent.com/93379681/208265149-3f4e94b6-a177-4bd8-84da-f9f9cb850d03.jpg)<br /><br />
 
 
 
-🔴 ## **Mobile View**
+🔴 **Mobile View**
 
 ![MOBILE mode](https://user-images.githubusercontent.com/93379681/208265154-0c70b28c-1bc1-450c-8205-5e10e7054a8f.png)<br /><br /><br /><br />
 
@@ -27,4 +27,4 @@
 
 
 
-**@Mainak-Das**
+**@Mainak-Das/DigiXam**
